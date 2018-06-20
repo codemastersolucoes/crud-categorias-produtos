@@ -109,7 +109,9 @@ class ComposerStaticInitc330049b1ea2c3bdc439cbd75d492c1a
         ),
         'C' => 
         array (
+            'Cviebrock\\EloquentSluggable\\' => 28,
             'Cron\\' => 5,
+            'Cocur\\Slugify\\' => 14,
             'Carbon\\' => 7,
         ),
         'B' => 
@@ -303,9 +305,17 @@ class ComposerStaticInitc330049b1ea2c3bdc439cbd75d492c1a
         array (
             0 => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar',
         ),
+        'Cviebrock\\EloquentSluggable\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cviebrock/eloquent-sluggable/src',
+        ),
         'Cron\\' => 
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
+        ),
+        'Cocur\\Slugify\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cocur/slugify/src',
         ),
         'Carbon\\' => 
         array (
@@ -330,6 +340,13 @@ class ComposerStaticInitc330049b1ea2c3bdc439cbd75d492c1a
     );
 
     public static $prefixesPsr0 = array (
+        'W' => 
+        array (
+            'Webpatser\\Uuid' => 
+            array (
+                0 => __DIR__ . '/..' . '/webpatser/laravel-uuid/src',
+            ),
+        ),
         'P' => 
         array (
             'Prophecy\\' => 
@@ -464,6 +481,28 @@ class ComposerStaticInitc330049b1ea2c3bdc439cbd75d492c1a
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
         'Carbon\\Exceptions\\InvalidDateException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
+        'CategoriesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/CategoriesTableSeeder.php',
+        'Cocur\\Slugify\\Bridge\\Laravel\\SlugifyFacade' => __DIR__ . '/..' . '/cocur/slugify/src/Bridge/Laravel/SlugifyFacade.php',
+        'Cocur\\Slugify\\Bridge\\Laravel\\SlugifyServiceProvider' => __DIR__ . '/..' . '/cocur/slugify/src/Bridge/Laravel/SlugifyServiceProvider.php',
+        'Cocur\\Slugify\\Bridge\\Latte\\SlugifyHelper' => __DIR__ . '/..' . '/cocur/slugify/src/Bridge/Latte/SlugifyHelper.php',
+        'Cocur\\Slugify\\Bridge\\League\\SlugifyServiceProvider' => __DIR__ . '/..' . '/cocur/slugify/src/Bridge/League/SlugifyServiceProvider.php',
+        'Cocur\\Slugify\\Bridge\\Nette\\SlugifyExtension' => __DIR__ . '/..' . '/cocur/slugify/src/Bridge/Nette/SlugifyExtension.php',
+        'Cocur\\Slugify\\Bridge\\Plum\\SlugifyConverter' => __DIR__ . '/..' . '/cocur/slugify/src/Bridge/Plum/SlugifyConverter.php',
+        'Cocur\\Slugify\\Bridge\\Silex2\\SlugifyServiceProvider' => __DIR__ . '/..' . '/cocur/slugify/src/Bridge/Silex2/SlugifyServiceProvider.php',
+        'Cocur\\Slugify\\Bridge\\Silex\\SlugifyServiceProvider' => __DIR__ . '/..' . '/cocur/slugify/src/Bridge/Silex/SlugifyServiceProvider.php',
+        'Cocur\\Slugify\\Bridge\\Symfony\\CocurSlugifyBundle' => __DIR__ . '/..' . '/cocur/slugify/src/Bridge/Symfony/CocurSlugifyBundle.php',
+        'Cocur\\Slugify\\Bridge\\Symfony\\CocurSlugifyExtension' => __DIR__ . '/..' . '/cocur/slugify/src/Bridge/Symfony/CocurSlugifyExtension.php',
+        'Cocur\\Slugify\\Bridge\\Symfony\\Configuration' => __DIR__ . '/..' . '/cocur/slugify/src/Bridge/Symfony/Configuration.php',
+        'Cocur\\Slugify\\Bridge\\Twig\\SlugifyExtension' => __DIR__ . '/..' . '/cocur/slugify/src/Bridge/Twig/SlugifyExtension.php',
+        'Cocur\\Slugify\\Bridge\\ZF2\\Module' => __DIR__ . '/..' . '/cocur/slugify/src/Bridge/ZF2/Module.php',
+        'Cocur\\Slugify\\Bridge\\ZF2\\SlugifyService' => __DIR__ . '/..' . '/cocur/slugify/src/Bridge/ZF2/SlugifyService.php',
+        'Cocur\\Slugify\\Bridge\\ZF2\\SlugifyViewHelper' => __DIR__ . '/..' . '/cocur/slugify/src/Bridge/ZF2/SlugifyViewHelper.php',
+        'Cocur\\Slugify\\Bridge\\ZF2\\SlugifyViewHelperFactory' => __DIR__ . '/..' . '/cocur/slugify/src/Bridge/ZF2/SlugifyViewHelperFactory.php',
+        'Cocur\\Slugify\\RuleProvider\\DefaultRuleProvider' => __DIR__ . '/..' . '/cocur/slugify/src/RuleProvider/DefaultRuleProvider.php',
+        'Cocur\\Slugify\\RuleProvider\\FileRuleProvider' => __DIR__ . '/..' . '/cocur/slugify/src/RuleProvider/FileRuleProvider.php',
+        'Cocur\\Slugify\\RuleProvider\\RuleProviderInterface' => __DIR__ . '/..' . '/cocur/slugify/src/RuleProvider/RuleProviderInterface.php',
+        'Cocur\\Slugify\\Slugify' => __DIR__ . '/..' . '/cocur/slugify/src/Slugify.php',
+        'Cocur\\Slugify\\SlugifyInterface' => __DIR__ . '/..' . '/cocur/slugify/src/SlugifyInterface.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
         'Cron\\DayOfMonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/DayOfMonthField.php',
@@ -473,6 +512,11 @@ class ComposerStaticInitc330049b1ea2c3bdc439cbd75d492c1a
         'Cron\\HoursField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/HoursField.php',
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
+        'Cviebrock\\EloquentSluggable\\ServiceProvider' => __DIR__ . '/..' . '/cviebrock/eloquent-sluggable/src/ServiceProvider.php',
+        'Cviebrock\\EloquentSluggable\\Services\\SlugService' => __DIR__ . '/..' . '/cviebrock/eloquent-sluggable/src/Services/SlugService.php',
+        'Cviebrock\\EloquentSluggable\\Sluggable' => __DIR__ . '/..' . '/cviebrock/eloquent-sluggable/src/Sluggable.php',
+        'Cviebrock\\EloquentSluggable\\SluggableObserver' => __DIR__ . '/..' . '/cviebrock/eloquent-sluggable/src/SluggableObserver.php',
+        'Cviebrock\\EloquentSluggable\\SluggableScopeHelpers' => __DIR__ . '/..' . '/cviebrock/eloquent-sluggable/src/SluggableScopeHelpers.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'DebugBar\\Bridge\\CacheCacheCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Bridge/CacheCacheCollector.php',
         'DebugBar\\Bridge\\DoctrineCollector' => __DIR__ . '/..' . '/maximebf/debugbar/src/DebugBar/Bridge/DoctrineCollector.php',
@@ -4135,8 +4179,11 @@ class ComposerStaticInitc330049b1ea2c3bdc439cbd75d492c1a
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
+        'Webpatser\\Uuid\\Uuid' => __DIR__ . '/..' . '/webpatser/laravel-uuid/src/Webpatser/Uuid/Uuid.php',
+        'Webpatser\\Uuid\\UuidServiceProvider' => __DIR__ . '/..' . '/webpatser/laravel-uuid/src/Webpatser/Uuid/UuidServiceProvider.php',
         'WhatsShop\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'WhatsShop\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'WhatsShop\\Http\\Controllers\\Api\\CategoryController' => __DIR__ . '/../..' . '/app/Http/Controllers/Api/CategoryController.php',
         'WhatsShop\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'WhatsShop\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'WhatsShop\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
@@ -4148,7 +4195,8 @@ class ComposerStaticInitc330049b1ea2c3bdc439cbd75d492c1a
         'WhatsShop\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'WhatsShop\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'WhatsShop\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
-        'WhatsShop\\ModelsCategory' => __DIR__ . '/../..' . '/app/ModelsCategory.php',
+        'WhatsShop\\Http\\Requests\\CategoryRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CategoryRequest.php',
+        'WhatsShop\\Models\\Category' => __DIR__ . '/../..' . '/app/Models/Category.php',
         'WhatsShop\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'WhatsShop\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'WhatsShop\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
